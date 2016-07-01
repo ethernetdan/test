@@ -1,0 +1,31 @@
+
+
+kubernetes'
+%namespaces/default/service/kubernetes
+
+apiVersionv1Ø
+metadata"
+name
+kubernetes"
+	namespacedefault"7
+selfLink+'/api/v1/namespaces//services/kubernetes"
+creationTimestamp"D
+labels"
+	component	apiserver"
+provider
+kubernetesá
+spec"
+sessionAffinityClientIP"
+type	ClusterIP"q
+ports"d
+0"
+name	https"
+protocolTCP"
+port443"
+
+targetPort443"
+nodePort0"
+selector"
+	clusterIP	<unknown> 
+status"
+loadBalancer
