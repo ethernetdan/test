@@ -1,84 +1,0 @@
-
-	tiller-rc4
-2namespaces/default/replicationcontroller/tiller-rc
-
-apiVersionv1ä
-metadata"1
-labels"
-apphelm"
-name
-tiller"
-name	tiller-rc"
-	namespacedefault"D
-selfLink84/api/v1/namespaces//replicationcontrollers/tiller-rc"
-
-generation1"
-creationTimestampÛ	
-spec"
-replicas1"3
-selector"
-apphelm"
-name
-tiller"ˆ	
-template"Z
-metadata"
-creationTimestamp"1
-labels"
-apphelm"
-name
-tiller"›
-spec"ë
-
-containers"Ø
-0"
-	resources"Ú
-livenessProbe"
-successThreshold1"
-failureThreshold3"I
-httpGet"
-path	/liveness"
-port44135"
-schemeHTTP"
-initialDelaySeconds1"
-timeoutSeconds1"
-periodSeconds10"Ü
-readinessProbe"J
-httpGet"
-path
-/readiness"
-port44135"
-schemeHTTP"
-initialDelaySeconds1"
-timeoutSeconds1"
-periodSeconds10"
-successThreshold1"
-failureThreshold3"2
-terminationMessagePath/dev/termination-log"
-imagePullPolicy
-Always"W
-ports"J
-0"
-containerPort44134"
-protocolTCP"
-name
-tiller"1
-image($gcr.io/kubernetes-helm/tiller:canary"Ž
-env"‚
-0"
-nameDEFAULT_NAMESPACE"Z
-	valueFrom"I
-fieldRef"
-
-apiVersionv1"#
-	fieldPathmetadata.namespace"
-name
-tiller"
-restartPolicy
-Always"%
-terminationGracePeriodSeconds30"
-	dnsPolicyClusterFirst"
-serviceAccountName"
-securityContext"
-volumes
-status"
-replicas0
